@@ -1,0 +1,175 @@
+<agro-menu-interna></agro-menu-interna>
+<div class="box">
+
+	<div class="op-title">
+		<span>A GLOBO TEM OPORTUNIDADES DE TODOS OS TAMANHOS<br>PARA OS ANUNCIANTES DIVULGAREM SUAS MARCAS</span>
+	</div>
+
+	<div class="black-box flex agro-row align-center">
+		<div class="black-box-text"><span>OS PROJETOS DE VALORIZAÇÃO DO AGRONEGÓCIO TAMBÉM ESTÃO<br>NA GLOBO, TANTO NA TV QUANTO NAS MÍDIAS DIGITAIS, COMO O<br><span class="black">AGRO - A INDÚSTRIA-RIQUEZA DO BRASIL,</span> EM MERCADO NACIONAL.</span>
+		</div>
+		<div class="black-box-image flex"><img src="assets/img/blackbox-img.png"></div>
+	</div>
+
+	<div class="text">
+		<span>ALÉM DISSO, É POSSÍVEL PATROCINAR LOCALMENTE, EM TODAS AS EXIBIDORAS, CAMPANHAS DE VÍDEO COMO <span class="black">TODO BRASILEIRO TEM O PÉ NA TERRA, O BRASIL ACREDITA NO AGRONEGÓCIO</span> E </span><span class="black"> DIA DO AGRICULTOR.</span>
+	</div>
+
+	<div class="video flex agro-row space-around">
+		<ul class="thumb-videos flex agro-row space-between">
+			<li (click)="toFullScreen(video1)"><img src="assets/img/video1.png"><div class="player"><img src="assets/img/player.png"></div></li>
+			<li (click)="toFullScreen(video2)"><img src="assets/img/video2.png"><div class="player"><img src="assets/img/player.png"></div></li>
+			<li (click)="toFullScreen(video3)"><img src="assets/img/video3.jpg"><div class="player"><img src="assets/img/player.png"></div></li>
+		</ul>
+	</div>
+
+</div>
+
+<div class="regua-area">
+	<div class="box">
+
+		<div class="regua-box flex">
+
+			<div class="voce-sabia">
+				<span class="globo-black">VOCÊ SABIA<br>QUE COM<br>APROXIMADAMENTE...</span>
+			</div>
+
+			<div class="regua">
+				<p-slider [(ngModel)]="indice" [step]="1" [style]="{'width':'200px'}" [min]="0" [max]="5"></p-slider>
+				<ul class="flex space-around newactive">
+					<li class="globo-black" (click)="funcao(0)" [ngClass]="{'active': indice === 0 }">R$100</li>
+					<li><img src="assets/img/bars.png"></li>
+					<li class="globo-black" (click)="funcao(1)" [ngClass]="{'active': indice === 1 }">R$500</li>
+					<li><img src="assets/img/bars.png"></li>
+					<li class="globo-black" (click)="funcao(2)" [ngClass]="{'active': indice === 2 }">R$1.000</li>
+					<li><img src="assets/img/bars.png"></li>
+					<li class="globo-black" (click)="funcao(3)" [ngClass]="{'active': indice === 3 }">R$5.000</li>
+					<li><img src="assets/img/bars.png"></li>
+					<li class="globo-black" (click)="funcao(4)" [ngClass]="{'active': indice === 4 }">R$10.000</li>
+					<li><img src="assets/img/bars.png"></li>
+					<li class="globo-black" (click)="funcao(5)" [ngClass]="{'active': indice === 5 }">R$25.000</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="select-regua">
+			<select [ngModel]="indice" (ngModelChange)="funcao($event)" browser-default>
+				<option [ngValue]='0'>R$100</option>
+				<option [ngValue]='1'>R$500</option>
+				<option [ngValue]='2'>R$1.000</option>
+				<option [ngValue]='3'>R$5.000</option>
+				<option [ngValue]='4'>R$10.000</option>
+				<option [ngValue]='5'>R$25.000</option>
+			</select>
+		</div>
+
+		<div><span class="basic">SELECIONE OS VALORES ACIMA E VISUALZIE AS OPÇÕES</span></div>
+
+		<div class="flex" id="clique"><span class="globo-texto">CLIQUE NOS VALORES ACIMA E VISUALIZE AS OPÇÕES</span></div>
+
+
+		<div class="flex" id="you">
+			<div class="green-line"></div>
+			<span class="can globo-texto">VOCÊ PODE:</span>
+			<div class="green-line"></div>
+		</div>
+
+		<div class="flex boxtexto">
+			<!-- Mensagens box verde -->
+			<div class="under-box-green globo-texto-bold oi flex column" [ngClass]="{'show': indice === 0 }">
+				<span>FALAR COM O<br>CRIADOR DE SUÍNOS<br>NO PARANÁ OU EM<br>SANTA CATARINA, ESTADOS RESPONSÁVEIS<br>PELA MAIOR PARTICIPAÇÃO<br>NESSA PRODUÇÃO...</span>
+			</div>
+			<div class="under-box-green globo-texto-bold oi flex column" [ngClass]="{'show': indice === 1 }">
+				<span>FALAR COM O<br>PRODUTOR DE<br>BANANA<br>NA BAHIA OU NO INTERIOR DE SÃO PAULO,<br>REFERÊNCIAS NESSA CULTURA...</span>
+			</div>
+			<div class="under-box-green globo-texto-bold oi flex column" [ngClass]="{'show': indice === 2 }">		
+				<span>FALAR COM O<br>HOMEM DO CAMPO NO MATO GROSSO<br>OU NO MATO GROSSO DO SUL,<br>GRANDES PRODUTORES DE SOJA NO PAÍS...</span>
+			</div>
+			<div class="under-box-green globo-texto-bold oi flex column" [ngClass]="{'show': indice === 3 }">
+				<span>FALAR COM O<br>AGRICULTOR DE CANA-DE-AÇÚCAR<br>NO INTERIOR DE SÃO PAULO OU EM GOIÁS,<br>OS MAIORES PRODUTORES DO PAÍS...</span>
+			</div>
+			<div class="under-box-green globo-texto-bold oi flex column" [ngClass]="{'show': indice === 4 }">			
+				<span>FALAR COM O<br>PRODUTOR RURAL NO RIO GRANDE DO SUL<br>OU EM PERNAMBUCO,<br>ESTADOS DE GRANDE RELEVÂNCIA NA PRODUÇÃO DE UVA...</span>
+			</div>
+			<div class="under-box-green globo-texto-bold oi flex column" [ngClass]="{'show': indice === 5 }">
+				<span>FALAR COM O<br>PRODUTOR DE CAFÉ<br>EM MINAS GERAIS OU NO ESPÍRITO SANTO,<br>REFERÊNCIAS NESSA CULTURA...</span>
+			</div>
+
+			<!-- Mensagens box normal -->
+
+			<div class=" flex under-box-grey globo-texto oi" [ngClass]="{'show': indice === 0 }">
+				<div>...veiculando uma inserção no <span class="globo-black-italic">Hora Um</span> (HORA) em <span class="globo-black">Foz do Iguaçu-PR</span>, área de cobertura com cerca de 1 milhão de telespectadores potenciais.</div>
+				<span class="ou">OU</span>
+				<div>...investindo ao longo de um dia na home <span class="globo-black">G1 Santa Catarina</span> na plataforma mobile com 50% de visibilidade, acessada por 4 mil pessoas diariamente.</div>
+				<span class="ou">OU</span>
+				<div class="special">...veiculando uma inserção no <span class="globo-black-italic">Bom Dia Santa Catarina</span> (BPRA) em <span class="globo-black">Chapecó-SC</span> e atingindo 18 mil impactos.</div>
+			</div>
+
+			<div class=" flex under-box-grey globo-texto oi" [ngClass]="{'show': indice === 1 }">
+				<div>...anunciando no <span class="globo-black-italic">Bahia Rural</span> (RURA) com uma inserção nas exibidoras de <span class="globo-black">Feira de Santana, Itabuna, Juazeiro</span> e <span class="globo-black">Vitória da Conquista-BA</span>, alcançando aproximadamente 658 mil pessoas.</div>
+				<span class="ou">OU</span>
+				<div>...exibindo vídeos de sete segundos para todos os interessados em assuntos do agronegócio nas páginas do <span class="globo-black">G1 Bahia</span> ao longo de uma semana.</div>
+				<span class="ou">OU</span>
+				<div class="special">...investindo em duas inserções no <span class="globo-black-italic">Bom Dia Brasil</span> (NBRA) em <span class="globo-black">Itapetininga-SP</span> e alcançando cerca de 142 mil telespectadores.</div>
+			</div>
+
+			<div class=" flex under-box-grey globo-texto oi" [ngClass]="{'show': indice === 2 }">
+				<div>...veiculando duas inserções no <span class="globo-black-italic">Jornal da Globo</span> (JGLO) na área de cobertura de <span class="globo-black">Rondonópolis-MT</span> e atingindo 31 municípios na região.</div>
+				<span class="ou">OU</span>
+				<div>...investindo na home <span class="globo-black">Globo.com</span> ao longo de um dia e impactando pessoas no <span class="globo-black">Mato Grosso</span> que acessam pelo desktop.</div>
+				<span class="ou">OU</span>
+				<div class="special">...investindo em quatro inserções no <span class="globo-black-italic">MS Rural</span> (MRUR) em <span class="globo-black">Ponta Porã-MS</span>, região com cerca de 1 milhão de telespectadores potenciais.</div>
+			</div>
+
+			<div class=" flex under-box-grey globo-texto oi" [ngClass]="{'show': indice === 3 }">
+				<div>...veiculando em <span class="globo-black">Ribeirão Preto-SP</span> no <span class="globo-black-italic">Bem Estar</span> (BEST), <span class="globo-black-italic">Jornal Hoje</span> (JHOJ) e <span class="globo-black-italic">Globo Rural</span> (GRUD) com uma inserção em cada um dos programas e alcançando cerca de 394 mil telespectadores.</div>
+				<span class="ou">OU</span>
+				<div class="special2">...adquirindo uma inserção nos programas <span class="globo-black-italic">Bom Dia Goiás</span> (BPRA), <span class="globo-black-italic">Encontro</span> (FATI), <span class="globo-black-italic">Sessão da Tarde</span> (TARA) e <span class="globo-black-italic">Profissão Repórter</span> (PROF) em todo o <span class="globo-black">interior de Goiás</span> e anunciando por um dia com 100% de visibilidade* na home do <span class="globo-black">G1 Goiás</span>, garantindo ao anunciante presença na Globo independentemente da plataforma: TV, desktop ou mobile.<br><span class="personalizada">*A visibilidade de 100% é de um formato desktop + um formato mobile.</span></div>
+				<span class="ou">OU</span>
+				<div class="special">...patrocinando o <span class="globo-black-italic">Jornal do Campo</span> (JOCA) ao longo de três meses em <span class="globo-black">Rio Verde-GO</span>, região que reúne grande parte dessa produção no Centro-Oeste.</div>
+			</div>
+
+			<div class=" flex under-box-grey globo-texto oi" [ngClass]="{'show': indice === 4 }">
+				<div>...patrocinando a campanha de vídeo <span class="globo-black">Todo Brasileiro Tem o Pé na Terra</span>, que mostra a cadeia dos produtos do agronegócio desde o campo até a mesa do brasileiro, em <span class="globo-black">Caxias do Sul e Erechim-RS</span>, regiões onde se concentra grande parte da safra nacional.</div>
+				<span class="ou">OU</span>
+				<div>...publicando uma matéria publicitária, explorando um conteúdo no <span class="globo-black">Rio Grande do Sul</span> ou em <span class="globo-black">Pernambuco</span> e atrelando a marca à credibilidade das páginas regionais do <span class="globo-black">G1</span>.</div>
+				<span class="ou">OU</span>
+				<div class="special">...investindo ao longo de três semanas no <span class="globo-black-italic">Globo Rural</span> (GRUD) e duas semanas no <span class="globo-black-italic">Praça TV 1ª Edição</span> (PTV1) em todo o <span class="globo-black">interior de Pernambuco</span>, alcançando mais de 1,3 milhão de telespectadores.</div>
+			</div>
+
+			<div class=" flex under-box-grey globo-texto oi" [ngClass]="{'show': indice === 5 }">
+				<div>...investindo em todas as exibidoras do <span class="globo-black">interior de Minas Gerais</span> no <span class="globo-black-italic">Hora Um</span> (HORA), <span class="globo-black-italic">Bom Dia Praça</span> (BPRA), <span class="globo-black-italic">Globo Esporte</span> (GESP), <span class="globo-black-italic">Sessão da Tarde</span> (TARA) e <span class="globo-black-italic">Praça TV 2ª Edição</span> (PTV2), com uma inserção em cada programa e alcançando cerca de 4,2 milhões de pessoas.</div>
+				<span class="ou">OU</span>
+				<div>...patrocinando o <span class="globo-black-italic">Bom Dia Espírito Santo</span> (BPRA) ao longo de três meses em <span class="globo-black">Colatina e Cachoeiro-ES</span>, principais regiões produtoras dessa cultura no estado.</div>
+				<span class="ou">OU</span>
+				<div class="special">...investindo ao longo de três semanas no <span class="globo-black-italic">Fantástico</span> (FANT) em <span class="globo-black">Vitória-ES</span> e comprando uma cota de participação mensal no <span class="globo-black">G1 Espírito Santo</span>, garantindo visibilidade e alcance nas páginas da editoria.</div>
+			</div>
+
+		</div>
+		<div class="fonte"><span class="globo-texto">Fontes: Universo Atlas de Cobertura Globo. Mapa da Mina  2016/2017. / Lista de Preços Globo out/16 a mar/17 (custos referentes a inserções de 15“). * Comercialização mínima de três meses.</span></div>	
+	</div>
+</div>
+
+<ul class="videos" [ngClass]="{'active': activeVideo}">
+	<li [ngClass]="{'active': activeVideo && activeVideo.id === 'video-1'}" onclick="overflow(this)">
+		<video #video1 id="video-1" (click)="pauseVideo(video1)">
+			<source src="assets/video1.mp4" type="video/mp4">
+			</video>
+			<div><button class="player play" *ngIf="video1.paused" (click)="playVideo(video1)"><img src="assets/img/player.png"></button></div>
+			<button class="close" (click)="closeFullScreen(video1)">Fechar</button>
+		</li>
+		<li [ngClass]="{'active': activeVideo && activeVideo.id === 'video-2'}">
+			<video #video2 id="video-2" (click)="pauseVideo(video2)">
+				<source src="assets/video2.mp4" type="video/mp4">
+				</video>
+				<button class="player play" *ngIf="video2.paused" (click)="playVideo(video2)"><img src="assets/img/player.png"></button>
+				<button class="close" (click)="closeFullScreen(video2)">Fechar</button>
+			</li>
+			<li [ngClass]="{'active': activeVideo && activeVideo.id === 'video-3'}">
+				<video #video3 id="video-3" (click)="pauseVideo(video3)">
+					<source src="assets/video3.mp4" type="video/mp4">
+					</video>
+					<button class="player play" *ngIf="video3.paused" (click)="playVideo(video3)"><img src="assets/img/player.png"></button>
+					<button class="close" (click)="closeFullScreen(video3)">Fechar</button>
+				</li>
+			</ul>

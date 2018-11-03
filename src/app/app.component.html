@@ -1,0 +1,33 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="header" [ngClass]="{'shinemenu': statemenu === true }">
+  <div class="topo1">
+    <a href="http://negocios8.redeglobo.com.br">
+      <img src="assets/img/logo-main-globo.png">
+    </a>
+  </div>
+  <div class="topom" (click)="openmenu()" [ngClass]="{'shinemenu': statemenu === true }">
+    <i class="fa fa-bars"></i>
+  </div>
+  <div class="topo2m" [ngClass]="{'openmenu': statemenu === true }">
+    <div>
+      <a href="http://negocios8.redeglobo.com.br/Paginas/home.aspx">HOME</a>
+      <a href="http://negocios8.redeglobo.com.br/Programas/Paginas/home.aspx">PROGRAMAÇÃO</a>
+      <a href="http://negocios8.redeglobo.com.br/Projetos/Paginas/Home.aspx">PROJETOS COMERCIAIS</a>
+      <a href="http://negocios8.redeglobo.com.br/Paginas/Midia-Kit.aspx">MIDIA KIT</a>
+      <a href="http://negocios8.redeglobo.com.br/BIP/Paginas/home.aspx">BIP</a>
+      <a href="https://siscom.redeglobo.com.br/telaloginNI.jsp">SIS.COM</a>
+    </div>
+  </div>
+  <div class="topo2">
+    <ul>
+      <li id="home-hover"><a href="http://negocios8.redeglobo.com.br/Paginas/home.aspx">HOME</a></li>
+      <li id="programacao-hover"><a href="http://negocios8.redeglobo.com.br/Programas/Paginas/home.aspx">PROGRAMAÇÃO</a></li>
+      <li id="projetos-hover"><a href="http://negocios8.redeglobo.com.br/Projetos/Paginas/Home.aspx">PROJETOS COMERCIAIS</a></li>
+      <li id="midia-hover"><a href="http://negocios8.redeglobo.com.br/Paginas/Midia-Kit.aspx">MIDIA KIT</a></li>
+      <li id="bip-hover"><a href="http://negocios8.redeglobo.com.br/BIP/Paginas/home.aspx">BIP</a></li>
+      <li id="sis-hover"><a target="blank" href="https://siscom.redeglobo.com.br/telaloginNI.jsp">SIS.COM</a></li>
+    </ul>
+  </div>
+</div>
+<router-outlet></router-outlet>
+

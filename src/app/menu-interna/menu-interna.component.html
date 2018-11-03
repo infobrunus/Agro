@@ -1,0 +1,25 @@
+<div class="menu-interna">
+	<div class="box flex column center mob-men">
+		<img class="interna-logo" src="assets/img/logo-interna.png" routerLink="/">
+		<div (click)="open()" class="mobile-menu-icon" [ngClass]="{'shine': state === true }">
+			<i class="fa fa-bars"></i>
+		</div>
+		<div class="home-menu">
+			<img src="">
+			<div><button class="home-menu-button" routerLink="/presenca" routerLinkActive="active">PRESENÇA EM TODO O BRASIL</button></div>
+			<div><button class="home-menu-button" routerLink="/tv" routerLinkActive="active">O PRODUTOR RURAL E A TV</button></div>
+			<div><button class="home-menu-button" routerLink="/internet" routerLinkActive="active">O PRODUTOR RURAL E A INTERNET</button></div>
+			<div><button class="home-menu-button" routerLink="/oportunidades" routerLinkActive="active">OPORTUNIDADES COMERCIAIS</button></div>
+		</div>
+
+		<div class="menu-mobile-open" [ngClass]="{'open': state === true }">
+			<div class="mobile-items">
+				<div routerLink="/presenca" routerLinkActive="active"><span>PRESENÇA EM TODO O BRASIL</span></div>
+				<div routerLink="/tv" routerLinkActive="active"><span>O PRODUTOR RURAL E A TV</span></div>
+				<div routerLink="/internet" routerLinkActive="active"><span>O PRODUTOR RURAL E A INTERNET</span></div>
+				<div routerLink="/oportunidades" routerLinkActive="active"><span>OPORTUNIDADES COMERCIAIS</span></div>
+			</div>	
+		</div>
+
+	</div>
+</div>

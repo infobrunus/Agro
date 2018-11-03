@@ -1,0 +1,232 @@
+.leftRs{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	display: block;
+	height: 70px;
+	background-color: #242424;
+	background-size: 24%;
+	width: 162px;
+	opacity: 1;
+	border: none;
+}
+
+.rightRs {
+	position: absolute;
+	height: 70px;
+	background-color: #242424;
+	width: 162px;
+	opacity: 1;
+	border: none;
+	top: 0;
+	margin: auto;
+	bottom: 0;
+	right: 0;
+}
+
+@media (min-height: 900px) {
+	.leftRs, .rightRs {
+		width: 138px;
+	}
+}
+
+
+:host /deep/ .ngucarousel-items {
+	transition: opacity 2.0s ease-in !important;
+}
+
+
+.leftRs:focus, .rightRs:focus {outline: 0}
+
+.leftRs:hover, .rightRs:hover {
+	background-color: rgba(0,0,0,0.8);
+	cursor: pointer;
+	transition: background-color 0.1s ease-in-out;
+}
+
+:host /deep/ .ngucarouselPoint {
+	list-style-type: none;
+	text-align: center;
+	padding: 12px;
+	margin: 0;
+	white-space: nowrap;
+	overflow: auto;
+	box-sizing: border-box;
+	margin-top: -2% !important;
+	position: relative !important;
+}
+
+:host /deep/ .ngucarouselPoint li {
+	display: inline-block;
+	border-radius: 50% !important;
+	background: #242424 !important;
+	padding: 4px !important;
+	margin: 0 4px !important;
+	transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+	transition: 0.4s;
+	width: 12px !important;
+	height: 12px !important;
+}
+
+:host /deep/ .ngucarouselPointDefault .ngucarouselPoint li.active {
+	background-color: #0DE38F !important;
+	transform: scale(1.0) !important;
+}
+
+:host /deep/ .ngucarousel-items {
+	height: 515px;
+	width: 100%;
+}
+
+
+
+:host /deep/ slide {
+	position: relative;
+	height: 80vh;
+}
+
+:host /deep/ slide img{
+	width: 100%;
+	height: 100%;
+}
+
+:host /deep/ .carousel-control-prev-icon, :host /deep/ .carousel-control-next-icon {
+	height: 70px;
+	background-color: #242424;
+	background-size: 24%;
+	width: 204px;
+	opacity: 1;
+}
+
+:host /deep/ .carousel-control-prev-icon {
+	background-image: url('../../assets/img/btn-prev.png');
+	cursor: pointer;
+}
+
+:host /deep/ .carousel-control-next-icon {
+	background-image: url('../../assets/img/btn-next.png');
+	cursor: pointer;
+}
+
+:host /deep/ .carousel-control-prev, :host /deep/ .carousel-control-next {
+	opacity: 1;
+}
+
+.one {
+	width: 100%;
+}
+
+.one, :host /deep/ .ngucarousel, .ngucarousel-inner, .item, .tablet {
+	height: 100vh;
+}
+
+@media (max-height: 700px) {
+	.one, :host /deep/ .ngucarousel, .ngucarousel-inner, .item, .tablet {
+		height: 110vh;
+	}
+	.tablet img {
+		height: 110vh !important;
+	}
+}
+
+.tablet img {
+	width: 100%;
+	object-fit: cover;
+	height: 100vh;
+}
+
+:host /deep/ .ngucarouselPointDefault, :host /deep/ .ngucarouselPoint {
+	display: none !important;
+}
+
+:host /deep/ .item .active{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+:host /deep/ slide img {
+	width: 40%;
+	height: 100%;
+	margin-left: 3%;
+}
+
+
+.car-m {
+	display: none;
+}
+
+:host /deep/ .item {
+	width: 100%;
+}
+
+:host /deep/ .ngucarousel-inner {
+	height: 100%;
+}
+
+:host /deep/ .carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	margin-right: 1%;
+	margin-left: 1%;
+	background-color: #242424;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+:host /deep/ .carousel-indicators .active {
+	background-color: #05E490;
+}
+
+@media (min-height: 800px) {
+	:host /deep/ .carousel-indicators {
+		bottom: 50px;
+	}   
+}
+
+
+
+@media (max-width: 600px) {
+	:host /deep/ .carousel-control-prev-icon {
+		background-image: url('../../assets/img/btn-prev-m.png');
+		width: 62%;
+		height: 7%;
+	}
+	:host /deep/ .carousel-control-next-icon {
+		background-image: url('../../assets/img/btn-next-m.png');
+		width: 62%;
+		height: 7%;
+	}
+	:host /deep/ .carousel-control-prev-icon, :host /deep/ .carousel-control-next-icon {
+		background-size: 40%;
+	}
+	:host /deep/ .carousel-indicators {
+		bottom: -10px;
+	}
+	:host /deep/ .carousel-indicators li {
+		background-color: #fff;
+	}
+	:host /deep/ .carousel-control {
+		display: flex;
+		align-items: flex-end;
+	}
+	:host /deep/ slide img{
+		width: 100%;
+		height: 82vh;
+		margin-left: 0% !important;
+		margin-top: 29%;
+	}
+	.item {
+		width: 100%;
+		height: 100%;
+	}
+
+	.car-m {
+		display: block;
+	}
+	.car-d {
+		display: none;
+	}
+}

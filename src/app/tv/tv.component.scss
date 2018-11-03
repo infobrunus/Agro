@@ -1,0 +1,354 @@
+.leftRs{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	display: block;
+	height: 70px;
+	background-color: #242424;
+	background-size: 24%;
+	width: 180px;
+	opacity: 1;
+	border: none;
+}
+
+.quebra {
+	width: 103% !important;
+}
+
+.rightRs {
+	position: absolute;
+	height: 70px;
+	background-color: #242424;
+	width: 180px;
+	opacity: 1;
+	border: none;
+	top: 0;
+	margin: auto;
+	bottom: 0;
+	right: 0;
+}
+
+.leftRs:focus, .rightRs:focus {outline: 0}
+
+.leftRs:hover, .rightRs:hover {
+	background-color: rgba(0,0,0,0.8);
+	cursor: pointer;
+	transition: background-color 0.1s ease-in-out;
+}
+
+:host /deep/ .ngucarouselPoint {
+	list-style-type: none;
+	text-align: center;
+	padding: 12px;
+	margin: 0;
+	white-space: nowrap;
+	overflow: auto;
+	box-sizing: border-box;
+	margin-top: -4% !important;
+	position: relative !important;
+}
+
+:host /deep/ .ngucarouselPoint li {
+	display: inline-block;
+	border-radius: 50% !important;
+	background: #fff !important;
+	padding: 4px !important;
+	margin: 0 4px !important;
+	transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+	transition: 0.4s;
+	width: 12px !important;
+	height: 12px !important;
+}
+
+:host /deep/ .ngucarouselPointDefault .ngucarouselPoint li.active {
+	background-color: #0DE38F !important;
+	transform: scale(1.0) !important;
+}
+
+:host /deep/ .ngucarousel-items {
+	width: 100%;
+}
+
+
+:host /deep/ slide {
+	position: relative;
+	height: 80vh;
+}
+
+:host /deep/ .carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	margin-right: 1%;
+	margin-left: 1%;
+	background-color: #fff;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+:host /deep/ .carousel-indicators .active {
+	background-color: #05E490;
+}
+
+:host /deep/ .carousel-control-prev-icon, :host /deep/ .carousel-control-next-icon {
+	height: 70px;
+	background-color: #242424;
+	background-size: 24%;
+	width: 204px;
+	opacity: 1;
+}
+
+:host /deep/ .carousel-control-prev-icon {
+	background-image: url('../../assets/img/btn-prev.png');
+	cursor: pointer;
+}
+
+:host /deep/ .carousel-control-next-icon {
+	background-image: url('../../assets/img/btn-next.png');
+	cursor: pointer;
+}
+
+:host /deep/ .carousel-control-prev, :host /deep/ .carousel-control-next {
+	opacity: 1;
+}
+
+:host /deep/ .carousel-item {
+	opacity: 0;
+	transition: all 5s ease-in-out;
+}
+
+:host /deep/ .carousel-item.active {
+	opacity: 1;
+}
+
+
+.relative {
+	top: 0;
+	position: absolute;
+}
+
+.items{
+	width: 100%;
+	height: 100%;
+}
+
+.spacing {
+	margin-right: 5%;
+	text-align: right;
+	align-items: flex-end;
+	width: 23%;
+}
+
+.spacing span{
+	font-size: 30px;
+	font-family: Globotipo Texto Black;
+	background-color: #0DE38F;
+	padding-right: 3%;
+	margin-top: 2px;
+}
+
+
+.spacing span:first-child {
+	width: 73%;
+}
+
+.spacing span:nth-child(2) {
+	width: 79%;
+}
+
+.spacing span:nth-child(3) {
+	width: 100%;
+}
+
+.spacing span:nth-child(4) {
+	width: 99%;
+}
+
+.spacing span:nth-child(5) {
+	width: 77%;
+} 
+
+.spacing span:nth-child(6) {
+	width: 82%;
+} 
+
+.text-1, .text-2 {
+	margin-right: 2%;
+	text-align: right;
+}
+
+.text-1 span, .text-2 span {
+	text-align: right;
+	font-family: Globotipo Texto Regular;
+	color: #fff;
+}
+
+.text-1 span {
+	font-size: 31px;
+}
+
+.text-2 span{
+	font-size: 29px;
+}
+
+.img-size img {
+	width: 80%;
+}
+
+.img-size2 img {
+	width: 85%;
+}
+
+.img-size3 img {
+	width: 95%; 
+}
+
+.height {
+	line-height: 40px;
+}
+
+.height-1 {
+	line-height: 30px;
+}
+
+.height-2 {
+	line-height: 35px;
+}
+
+.height-3 {
+	line-height: 37px;
+}
+
+.last-slide {
+	align-items: flex-end;
+	margin-right: 2%;
+}
+
+.last-slide span {
+	font-size: 30px;
+	font-family: Globotipo Texto Black;
+	text-align: right;
+	background-color: #0DE38F;
+	padding-right: 3%;
+	margin-top: 2px;
+	height: 38px;
+}
+
+.home-slider-bg {
+	width: 100%;
+}
+
+@media (min-height: 900px) {
+	:host /deep/ ngu-carousel, .home-slider-bg, .item, .ngucarousel-items {
+		height: 78.3vh !important;
+	}
+}
+
+@media(min-width: 605px) {
+	#comp {
+		margin-right: -10%;
+	}
+	:host /deep/ ngu-carousel, .home-slider-bg, .item, .ngucarousel-items {
+		height: 77vh;
+	}
+	.home-slider-bg {
+		object-fit: cover;
+	}
+
+}
+
+@media(max-width: 600px) {
+	:host /deep/ .ngucarouselKDS6gT, :host /deep/ .ngucarousel, :host /deep/ .ngucarousel-inner, 
+	:host /deep/ .ngucarousel-items, :host /deep/ .item, .items, .home-slider-bg {
+		height: 100vh;
+	}
+	:host /deep/ .ngucarouselPoint {
+		margin-top: -14% !important;
+	}
+	.home-slider-bg {
+		width: 100%;
+	}
+	.rightRs, .leftRs {
+		height: 45px;
+		width: 70px;
+	}
+	.rightRs img, .leftRs img {
+		width: 50%;
+	}
+	.header {
+		z-index: 1 !important;
+	}
+	:host /deep/ slide {
+		margin-top: 27%;
+	}
+	.item-bg {
+		object-fit: cover;	
+	}
+	.items {
+		flex-direction: column;
+		text-align: center;
+	}
+	.items img {
+		width: 70%;
+	}
+	.text-1, .text-2 {
+		text-align: center;
+	}
+	.text-2 span, .text-1 span {
+		font-size: 14px;
+		line-height: unset;
+	}
+	.text-1 span br, .text-2 span br {
+		content: '...';
+		margin-right: 1%;
+	}
+	.height, .height-1, .height-2, .height-3 {
+		line-height: unset;
+	}
+	.spacing {
+		margin-right: 5%;
+		-ms-flex-align: end;
+		align-items: flex-start;
+		margin-top: 30%;
+		margin-bottom: 6%;
+		width: 58%;
+	}
+	.spacing span {
+		font-size: 20px !important;
+	}
+
+}
+
+@media (min-width: 1251px) and (max-width: 1310px) {
+	.spacing {
+		width: 25%;
+	}
+}
+
+@media (max-width: 1250px) {
+	.spacing span{
+		font-size: 26px;
+	}
+	.home-slider-bg {
+		height: 100vh;
+	}
+}
+
+@media (max-width: 1100px) {
+	.spacing span{
+		font-size: 23px;
+	}
+}
+
+/*
+
+
+texto slide 2 Texto Regular 31.5px 
+
+slide 3 Fonte: 7ª Pesquisa Hábitos do Produtor Rural ABMRA – FNP/Informa – Ano 2017  (Nº 2.835) Texto Bold 10px
+
+slide 7 - 37px
+
+
+
+*/

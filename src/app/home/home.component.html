@@ -1,0 +1,66 @@
+<div>
+	<carousel [interval]="myInterval" [noPause]="true">
+		<div class="centralize">
+			<div class="box relative flex space-center">
+				<div class="home-menu">
+					<div><button class="home-menu-button" routerLink="/presenca">PRESENÇA EM TODO O BRASIL</button></div>
+					<div><button class="home-menu-button" routerLink="/tv">O PRODUTOR RURAL E A TV</button></div>
+					<div><button class="home-menu-button" routerLink="/internet">O PRODUTOR RURAL E A INTERNET</button></div>
+					<div><button class="home-menu-button" routerLink="/oportunidades">OPORTUNIDADES COMERCIAIS</button></div>
+				</div>
+			</div>
+			<div (click)="open()" class="mobile-menu-icon" [ngClass]="{'shine': state === true }">
+				<i class="fa fa-bars"></i>
+			</div>
+
+		</div>
+
+		<div class="home-logo"><img src="assets/img/logo.png"></div>
+
+		<div class="menu-mobile-open" [ngClass]="{'open': state === true }">
+			<div class="mobile-items">
+				<div routerLink="/presenca"><span>PRESENÇA EM TODO O BRASIL</span></div>
+				<div routerLink="/tv"><span>O PRODUTOR RURAL E A TV</span></div>
+				<div routerLink="/internet"><span>O PRODUTOR RURAL E A INTERNET</span></div>
+				<div routerLink="/oportunidades"><span>OPORTUNIDADES COMERCIAIS</span></div>
+			</div>	
+		</div>
+		<slide>
+			<img src="assets/img/home-bg1.png" alt="First slide" class="home-slider-bg">
+			<div class="centralize">
+				<div class="slide-info">
+					<span>A GLOBO É UMA <span class="black">PODEROSA FERRAMENTA PARA<br> FALAR</span> COM UM PAÍS QUE TEM NO AGRONEGÓCIO<br> UMA DAS SUAS PRINCIPAIS ATIVIDADES ECONÔMICAS.</span>
+					<div><img src="assets/img/triangle.png"><a routerLink="/presenca">SAIBA MAIS</a></div>
+				</div>
+			</div>
+
+		</slide>
+		<slide>
+			<img src="assets/img/home-bg2.png" alt="Second slide" class="home-slider-bg">
+			<div class="centralize">
+				<div class="slide-info">
+					<span>NA TV VOCÊ ENCONTRA O LUGAR IDEAL<br> PARA DESENVOLVER UM PROJETO DE<br><span class="black"> COMUNICAÇÃO PARA O AGRONEGÓCIO.</span></span>
+					<div><img src="assets/img/triangle.png"><a routerLink="/tv">SAIBA MAIS</a></div>
+				</div>
+			</div>
+		</slide>
+		<slide>
+			<img src="assets/img/home-bg3.png" alt="Third slide" class="home-slider-bg">
+			<div class="centralize">
+				<div class="slide-info">
+					<span>NA INTERNET, PROFUNDIDADE LOCAL E<br> ABRANGÊNCIA NACIONAL COM O <span class="black">PORTAL MAIS<br> ACESSADO PELOS PRODUTORES RURAIS.</span></span>
+					<div><img src="assets/img/triangle.png"><a routerLink="/internet">SAIBA MAIS</a></div>
+				</div>
+			</div>
+		</slide>
+		<slide>
+			<img src="assets/img/home-bg4.png" alt="Third slide" class="home-slider-bg">
+			<div class="centralize">
+				<div class="slide-info">
+					<span>A GLOBO TEM OPORTUNIDADES DE TODOS<br> OS TAMANHOS PARA OS <span class="black">ANUNCIANTES<br> DIVULGAREM SUAS MARCAS.</span></span>
+					<div><img src="assets/img/triangle.png"><a routerLink="/oportunidades">SAIBA MAIS</a></div>
+				</div>
+			</div>
+		</slide>
+	</carousel>
+</div>

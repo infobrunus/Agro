@@ -1,0 +1,595 @@
+.first-side {
+	margin-top: 8%;
+}
+
+.presenca-left {
+	width: 40%;
+	border-right: solid 7px #0DE38F;
+	padding-right: 3%;
+}
+
+.presenca-left .titles {
+	flex-direction: column;
+	text-align: right;
+}
+
+.presenca-left .titles span{
+	font-family: Globotipo Texto Black;
+	font-size: 33px;
+	color: #242424;
+	line-height: 37px;
+}
+
+.titles {
+	align-items: flex-end;
+}
+
+.titles span {
+	background-color: #0DE38F;
+	padding-right: 2%;
+	margin-top: 2px;
+}
+
+.titles span:first-child {
+	width: 68%;
+}
+
+.titles span:nth-child(2) {
+	width: 73%;
+}
+
+.titles span:nth-child(3) {
+	width: 85%;
+}
+
+.titles span:nth-child(4) {
+	width: 65%;
+}
+
+.titles span:nth-child(5) {
+	width: 37%;
+}    
+
+.texto {
+	text-align: right;
+}
+
+.texto div {
+	margin-top: 4%;
+}
+
+.texto span{
+	font-family: Globotipo Texto Regular;
+	font-size: 18px;
+}
+
+.bold {
+	font-family: Globotipo Texto Black !important;
+}
+
+.presenca-right {
+	width: 60%;
+}
+
+.presenca-right img {
+	margin-left: 5%;
+}
+
+.presenca-right img:nth-child(2) {
+	display: none;
+}
+
+.flex-items {
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 8%;
+}
+
+.third-side {
+	margin-top: 6%;
+	text-align: center;
+}
+
+.third-title, .items-title, .items-subtitle {
+	font-family: Globotipo Texto Black;
+	color: #0DE38F;
+}
+
+.third-title {
+	font-size: 31px;
+}
+
+.items-title {
+	font-size: 60px;	
+}
+
+.items-subtitle {
+
+}
+
+.item-group img {
+	width: 100%;
+	height: 100%;
+}
+
+.text-1 {
+	align-items: center;
+	margin-top: 6%;
+	text-align: left;
+	margin-bottom: 2%;
+}
+
+.text-1 img {
+	margin-top: -12%;
+}
+
+.text-1 div {
+	width: 50%;
+}
+
+.text-1 div span {
+	margin-bottom: 5%;
+}
+
+.margin {
+	margin-top: -4%;
+}
+
+.text-1 div:nth-child(2) {
+	margin-top: -3%;
+}
+
+.legenda {
+	width: 93%;
+	font-family: Globotipo Texto Regular;
+	font-size: 11px;
+	justify-content: flex-end;
+}
+
+.text-1 span {
+	font-size: 17px;
+	font-family: Globotipo Texto Regular;
+	color: #242424;
+}
+
+@supports (-ms-ime-align: auto) {
+	.first-side, .third-side {
+		margin-top: 60px; 
+	}
+	.legenda {
+		padding-top: 12px;
+	}
+}
+
+.fourth-side {
+	background-image: url('../../assets/img/presenca-bg.png');
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 660px;
+	position: relative;
+	z-index: 2;
+}
+
+.elipse {
+	margin-top: 1%;
+	background-image: url('../../assets/img/elipse.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 1;
+	width: 640px;
+	height: 640px;
+	margin-left: 36%;
+
+	svg {
+		enable-background:new 0 100 594.3 641.9;
+		width: 100%;
+		height: 97%;
+
+		path.selected {
+			fill: #696969 !important;
+		}   
+	}
+
+	.boxes {
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		li {
+			display: none;
+			width: 100px;
+			height: 100px;
+
+			&.show{
+				display: block;
+			}
+		}
+		li img {
+			margin-top: -140%;
+		}
+	}
+
+	.makers {
+		li {
+			position: absolute;
+			list-style: none;
+
+			&:nth-child(1) {
+				top: 62px;
+				left: 206px;
+			}
+
+			&:nth-child(2) {
+				top: 370px;
+				left: 521px;
+			}
+
+			&:nth-child(3) {
+				top: 257px;
+				left: 493px;
+			}
+
+			&:nth-child(4) {
+				top: 236px;
+				left: 174px;
+			}
+
+			&:nth-child(5) {
+				top: 425px;
+				left: 485px;
+			}
+
+			&:nth-child(6) {
+				top: 355px;
+				left: 452px;
+			}
+
+			&:nth-child(7) {
+				top: 342px;
+				left: 493px;
+			}
+
+			&:nth-child(8) {
+				top: 411px;
+				left: 402px;
+			}
+
+			&:nth-child(9) {
+				top: 262px;
+				left: 260px;
+			}
+
+			&:nth-child(10) {
+				top: 320px;
+				left: 385px;
+			}
+
+			&:nth-child(11) {
+				top: 132px;
+				left: 501px;
+			}
+
+			&:nth-child(12) {
+				top: 106px;
+				left: 448px;
+			}
+
+			&:nth-child(13) {
+				top: 135px;
+				left: 536px;
+			}
+
+			&:nth-child(14) {
+				top: 163px;
+				left: 571px;
+			}
+
+			&:nth-child(15) {
+				top: 222px;
+				left: 578px;
+			}
+
+			&:nth-child(16) {
+				top: 146px;
+				left: 162px;
+			}
+
+			&:nth-child(17) {
+				top: 239px;
+				left: 561px;
+			}
+
+			&:nth-child(18) {
+				top: 232px;
+				left: 109px;
+			}
+
+			&:nth-child(19) {
+				top: 448px;
+				left: 350px;
+			}
+
+			&:nth-child(20) {
+				top: 364px;
+				left: 310px;
+			}
+
+			&:nth-child(21) {
+				top: 241px;
+				left: 389px;
+			}
+
+		}
+	}
+}
+
+.elipse img {
+	margin-top: 7%;
+	position: absolute;
+	margin-left: -25px;
+}
+
+.presenca-box {
+	padding: 1%;
+	border: solid 7px #0DE38F;
+	width: 376px;
+	height: auto;
+	margin-left: 4%;
+	margin-top: 3%;
+	align-self: baseline;
+}
+
+.presenca-box2 {
+	padding: 9%;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	line-height: 23px;
+}
+
+.presenca-box-text1 {
+	font-family: Globotipo Texto Black;
+	font-size: 21px;
+	color: #fff;
+	margin-bottom: 4%;
+}
+
+.presenca-box-text2 {
+	font-family: Globotipo Texto Regular;
+	font-size: 21px;
+}
+
+.presenca-box-text3 {
+	font-family: Globotipo Texto Regular;
+	font-size: 15px;
+	margin-top: 10%;
+}
+
+.bold-green {
+	font-family: Globotipo Texto Black;
+	color: #0DE38F;
+}
+
+:host /deep/ slide {
+	display: none;
+}
+
+.presencabox-mobile {
+	display: none;
+}
+
+.mapa-mobile {
+	display: none;
+}
+
+.leftRs, .rightRs {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.leftRs:focus, .rightRs:focus {
+	outline: 0
+}
+
+.leftRs img, .rightRs img {
+	margin: 0 !important;
+	position: unset;
+	width: 30%;
+}
+
+.leftRs{
+	margin: 0 !important;
+	top: 370px;
+	bottom: 0;
+	display: block;
+	height: 45px;
+	background-color: #242424;
+	background-size: 24%;
+	width: 35px;
+	opacity: 1;
+	border: none;
+}
+
+.rightRs {
+	height: 45px;
+	background-color: #242424;
+	width: 35px;
+	opacity: 1;
+	border: none;
+	top: 370px;
+	margin: 0 !important;
+	bottom: 0;
+	right: 0;
+}
+
+.mobile-box {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.indicador {
+	margin-top: 8%;
+}
+
+.indicador2 {
+	margin-top: 30%;
+	margin-left: -3%;
+}
+
+.mobile-box img {
+	width: 70% !important;
+	margin-left: 5% !important;
+}
+
+@media (min-width: 2000px) {
+	.fourth-side {
+		background-size: 100%;
+	}
+	.elipse {
+		margin-top: 0.5%;
+	}
+}
+
+@media (max-width: 600px) {
+	:host /deep/ .ngucarouselPointDefault {
+		display: none;
+	}
+	.mapa-mobile {
+		display: block;
+	}
+	.mapa-mobile .maps img:first-child {
+		margin: 0;
+		width: 100%;
+		position: relative;
+	}
+	.makers, .boxes, .elipse svg {
+		display: none;
+	}
+	.block {
+		display: none;
+	}
+	.presencabox-mobile {
+		display: block;
+	}
+	:host /deep/ slide {
+		display: block;
+	}
+	.presenca-right {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.presenca-right img:first-child{
+		display: none;
+	}
+	.presenca-right img:nth-child(2) {
+		display: block;
+		margin-top: 10%;
+	}
+	.presenca-left .titles {
+		flex-direction: column;
+	}
+	.presenca-left .titles span {
+		font-size: 30px;
+	}
+	.titles {
+		align-items: flex-start;
+	}
+	.texto {
+		text-align: left;
+		padding-bottom: 5%;
+	}
+	.presenca-left {
+		border-right: none;
+		border-bottom: solid 3px #0DE38F;
+		width: 100%;
+	}
+	.first-side {
+		flex-direction: column;
+		margin-top: 45%;
+	}
+	.third-side {
+		margin-top: 10%;
+		text-align: center;
+		flex-direction: column;
+	}
+	.third-title {
+		font-size: 15px;
+	}
+	.text-1 {
+		align-items: center;
+		margin-top: 15%;
+		text-align: left;
+	}
+	.text-1 img {
+		margin-bottom: 10%;
+	}
+	.text-1 div {
+		width: 100%;
+	}
+	.agro-row {
+		flex-direction: column;
+	}
+	*, ::after, ::before {
+		box-sizing: unset;
+	}
+	.fourth-side {
+		min-height: 1000px;
+		background-size: 700px 1000px;
+	}
+	.presenca-box {
+		width: 373px;
+	}
+	.presenca-box2 {
+		padding: 5%;
+	}
+	.presenca-box2 br {
+		display: none;
+	}
+	.presenca-box-text1 {
+		font-size: 14px;
+	}
+	.presenca-box-text2, .presenca-box-text3 {
+		font-size: 12px;
+	}
+	.elipse {
+		width: 85%;
+		height: 46%;
+		background-size: 100%;
+		margin-left: 0;
+		top: 44%;
+		margin-left: 0%;
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 330px) {
+	.box {
+		width: 270px;
+	}
+	.presenca-left .titles span {
+		font-size: 27px;
+	}
+}
+
+/* 
+
+
+
+Ngclass
+váriável booleana
+no onclick do item eu altero o valor da variável
+menu mobile open padrão é false
+quando clicar em tal item chama função que no angular eu altero o valor pra true
+ngclass add classe active quando a variável for true
+active display block blablabla
+
+
+
+*/
